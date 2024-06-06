@@ -8,6 +8,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #FEBE10;
+    overflow-x: hidden;
     
 }
 
@@ -27,18 +28,31 @@ a {
 }
 
 .div_container {
-    /* border: solid 1px red; */ /* borda para ajudar na formatação */
-
     width: 1440px;
     margin: auto;
 
-    border: solid 1px red;
+}
+
+.font_1 {
+    font-size: 1rem;
+}
+.font_2 {
+    font-size: 2rem;
+}
+.font_3 {
+    font-size: 3rem;
+}
+.font_4 {
+    font-size: 4rem;
+}
+.font_5 {
+    font-size: 5rem;
 }
 
 /* ---------------------- HEADER */
 
 header {
-    height: 100px;
+    height: 200px;
 }
 
 .header_div {
@@ -50,67 +64,140 @@ header {
 }
 
 #header_titulo {
-    font-size: 3rem;
     width: 100%;
 }
 
 /* ---------------------- MAIN */
 
-main {
-    width: 100vw;
-    height: 100vh;
-    content: "";
-}
-
-#main_container {
+#noticias {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 150vh;
 }
 
-.main_div {
-    border: solid 1px yellow;
+.div_par {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.div_noticia {
+    height: 50vh;
     width: 50%;
-    height: 50%;
+    text-align: center;
+    margin: auto;  
+
+    display: flex;
+    flex-direction: row;
 }
 
-#div1 {
-    content: "";
+.div_noticia > p {
+    width: calc(100% - 70px);
 }
-#div2 {
-    content: "";
+
+.titulo_design {
+    background-color: white;
+    width: 70px;
+    padding: 220px 0px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.rotate {
+    transform: rotate(270deg);
+}
+
+.noticia_texto {
+    text-shadow: 5px 5px 2px black;
+    color: white;
+}
+
+/* ---------------------- BACKGROUND IMAGES */
+
+#noticia_1 {
+    background-image: url("https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2024/06/image-16.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#noticia_1:hover {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTxR6SVBItph4dNJg_JT7TSHsSsqpvk8dBxw&s");
+}
+
+
+#noticia_2 {
+    background-image: url("https://tntsports.com.br/__export/1717274461184/sites/esporteinterativo/img/2024/06/01/carvajal_-_gettyimages-2155634325_1.jpg_554688468.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     
 }
-#div3 {
-    content: "";
+
+#noticia_2:hover {
+    background-image: url("https://placar.com.br/wp-content/uploads/2022/05/000_32BG4X6.jpg");
+}
+
+#noticia_3 {
+    background-image: url("https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2024/01/capturar_149.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     
 }
-#div4 {
-    content: "";
+
+#noticia_3:hover {
+    background-image: url("https://img.odcdn.com.br/wp-content/uploads/2021/03/shutterstock_215339035_Easy-Resize.com_.jpg");
 
 }
 
+#noticia_4 {
+    background-image: url("https://uploads.jovemnerd.com.br/wp-content/uploads/2024/06/ps_store_promocao_summer_game_fest__5a5uz6.jpg?ims=1210x544/filters:quality(75)");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
 
+#noticia_4:hover {
+    background-image: url("https://assets.xboxservices.com/assets/68/70/6870960a-ce3a-4728-8575-953de9cdc749.jpg?n=Red-Dead-Redemption-II_Gallery-0_1350x759_02.jpg");
+
+}
+
+#noticia_5 {
+    background-image: url("https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/05/30/899428260-harry-potter-azkaban.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+#noticia_5:hover {
+    background-image: url("https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/05/harry-potter-prisioneiro-azkaban.jpg?w=1220&h=674&crop=1");
+
+}
+
+#noticia_6 {
+    background-image: url("https://img.nsctotal.com.br/wp-content/uploads/2023/10/sequoia-gigante-com-pessoa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+#noticia_6:hover {
+    background-image: url("https://img.nsctotal.com.br/wp-content/uploads/2023/10/parque-de-sequoia.jpg");
+
+}
 
 /* ---------------------- FOOTER */
 
 footer {
-    background-color: transparent;
-    
     height: 20vh;
     width: 100vw;
-
 }
 
 .footer_div {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
+    justify-content: center;
 
     height: 100%;
-}
-
-#creation {
-    font-size: 2rem;
 }
 
 /* ------------------ MEDIA QUERY */
